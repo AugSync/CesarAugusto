@@ -73,3 +73,8 @@
     width: 40px;
     height: 40px;
 }
+
+.rede:hover {
+    animation-name: tada;
+    animation-duration: 2s;
+}
