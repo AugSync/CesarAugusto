@@ -1,0 +1,75 @@
+#carousel img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.nabvar {
+    display: flex;
+    align-items: center;
+}
+
+#nombre {
+    display: flex;
+    justify-content: center;
+}
+
+#nombre h1 {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+#navbar img {
+    margin: 0 15px 0 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.hides {
+    visibility: hidden;
+}
+
+.animacion {
+    visibility: hidden;
+    font-size: 5vh;
+    animation-name: fadeInDown, hides;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hides {
+    from {
+        visibility: hidden;
+    }
+
+    to {
+        visibility: visible;
+    }
+}
+
+.fondo {
+    background-color: rgba(0, 0, 0, .9);
+    width: 50vw;
+    margin: 0 auto 15px;
+}
+
+#habilidades {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer img {
+    width: 40px;
+    height: 40px;
+}
