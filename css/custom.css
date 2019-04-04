@@ -1,17 +1,30 @@
 #carousel img {
     width: 100%;
     height: 40vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .nabvar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #nombre {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 #nombre h1 {
@@ -23,7 +36,8 @@
     margin: 0 15px 0 0;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
 }
 
 .hides {
@@ -33,10 +47,24 @@
 .animacion {
     visibility: hidden;
     font-size: 5vh;
-    animation-name: fadeInDown, hides;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: fadeInDown, hides;
+            animation-name: fadeInDown, hides;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hides {
+    from {
+        visibility: hidden;
+    }
+
+    to {
+        visibility: visible;
+    }
 }
 
 @keyframes hides {
@@ -57,16 +85,35 @@
 
 #habilidades {
     height: 380px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between
 }
 
 
 #footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 #footer img {
@@ -75,6 +122,8 @@
 }
 
 .rede:hover {
-    animation-name: tada;
-    animation-duration: 2s;
+    -webkit-animation-name: tada;
+            animation-name: tada;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
 }
